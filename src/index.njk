@@ -1,12 +1,21 @@
 {% extends '_templates/base.njk' %}
 
+{% block page_title %}Queen Index Page{% endblock %}
+
+{% block page_description %}Information about the band Queen.{% endblock %}
+
 {% block content %}
 <div class="container">
+  <h1>Who is Queen?</h1>
+  <p>Queen is a super sick rock band band formed in London in 1970.</p>
+  <h2>Members loop</h2>
+  <p>This loops through data that came from a Google Docs example.</p>
   <div class="row">
-    <div class="col">
-      <h1>About Queen</h1>
-      <p>Queen is a super cool band with four members formed in London in 1970. </p>
-    </div>
+    {% for member in queen.members %}
+      <div class="col">
+        <img src="img/{{ member.slug }}.jpg" alt="" class="img-fluid">
+        <h3><a href="members/{{ member.slug }}.html">{{ member.name }}</a></h3>
+      </div>
+    {% endfor %}
   </div>
-</div>
 {% endblock %}
