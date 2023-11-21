@@ -31,6 +31,15 @@
       "array": "members",
       "slug": "slug",
       "path": "members"
+    },
+      
+    {
+      "template": "bake-queen",
+      "data": "queen",
+      "array": "discography",
+      "slug": "title",
+      "path": "disc"
     }
+    
   ]
 }
