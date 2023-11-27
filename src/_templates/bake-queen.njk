@@ -1,35 +1,21 @@
 {% extends '_templates/base.njk' %}
 {% set relative_path = "../" %}
-{% from '_macros/prose.njk' import prose %}
 
 {% block page_title %}{{ name }}{% endblock %}
 
 {% block page_description %}{{ name }} by Lane Rice{% endblock %}
 
 {% block content %}
-  <!-- <article class="container">
-    <div class="row">
-      <div class="col-sm-4">
-        <img src="../img/queen.jpg" alt="band member" class="img-fluid">
-        <p class="byline">By Lane<br>
-        <span>Class Project</span></p>
-        <hr class="d-sm-none">
-      </div>
-      <div class="col-sm-8">
-        <img src="../img/{{ image }}" alt="" class="img-fluid mb-4">
-        <h1>{{ headline }}</h1>
-        {{ prose(post) }}
-      </div>
-    </div>
-   </article> -->
-
   <article class="container">
     <div class="row">
       <div class="col-sm-4">
-          <img src="../img/{{ slug }}.jpg" alt="" class="img-fluid mb-4">
+          <img src="../img/members/{{ image }}" alt="" class="img-fluid mb-4">
       </div>
       <div class="col-sm-8">
           <h1>{{ name }}</h1>
+          <h3>{{ instruments }}</h3>
+          <h6>{{ tenure }}</h6>
+          <h6>{{ birthplace }}</h6>
           <p>{{ description | safe }}</p>
       </div>
     </div>

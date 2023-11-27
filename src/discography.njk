@@ -11,6 +11,7 @@
   <p>This loops through data that came from a Google Docs example.</p>
   <div class="row">
     {% for disc in queen.discography %}
+      <img src="img/discs/{{ disc.image }}" alt="album cover" class="img-fluid">
       <h3>{{ disc.title }}</h3>
       <p>{{ disc.year }}</p>
       <hr>

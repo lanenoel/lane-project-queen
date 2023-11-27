@@ -7,13 +7,11 @@
 {% block content %}
 <div class="container">
   <h1>Who is Queen?</h1>
-  <p>Queen is a super sick rock band band formed in London in 1970.</p>
-  <h2>Members loop</h2>
-  <p>This loops through data that came from a Google Docs example.</p>
+  <h6>Queen is a super sick rock band band formed in London in 1970.</h6>
   <div class="row">
     {% for member in queen.members %}
       <div class="col">
-        <img src="img/{{ member.slug }}.jpg" alt="" class="img-fluid">
+        <img src="img/members/{{ member.imagebw }}" alt="band member" class="img-fluid">
         <h3><a href="members/{{ member.slug }}.html">{{ member.name }}</a></h3>
       </div>
     {% endfor %}

@@ -6,7 +6,23 @@
 
 {% block content %}
 <div class="container">
-  <h1>Tours</h1>
-  <p>Here I will create a table (maybe) with all the tour dates.</p>
+<table class="table table-bordered table-dark table-striped" >
+  <thead>
+    <tr>
+      <th scope="col">Date</th>
+      <th scope="col">City</th>
+      <th scope="col">Venue</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for tour in queen.tour %}
+    <tr>
+      <td>{{ tour.date }}</td>
+      <td>{{ tour.city }}</td>
+      <td>{{ tour.venue }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
 </div>
 {% endblock %}
