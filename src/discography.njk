@@ -7,14 +7,22 @@
 {% block content %}
 <div class="container">
   <h1>Queen's Discography</h1>
-  <h2>Discography loop</h2>
-  <p>This loops through data that came from a Google Docs example.</p>
+  <p>A list of all of Queen's studio albums:</p>
   <div class="row">
     {% for disc in queen.discography %}
-      <img src="img/discs/{{ disc.image }}" alt="album cover" class="img-fluid">
-      <h3>{{ disc.title }}</h3>
-      <p>{{ disc.year }}</p>
-      <hr>
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="img/discs/{{ disc.image }}" class="img-fluid rounded-start" alt="album cover">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h2 class="card-title">{{ disc.title }}</h2>
+              <p class="card-text">{{ disc.year }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
     {% endfor %}
   </div>
 </div>
