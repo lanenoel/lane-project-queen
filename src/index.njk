@@ -8,11 +8,13 @@
 <div class="container">
   <h1>Who is Queen?</h1>
   <h6>Queen is a super sick rock band band formed in London in 1970.</h6>
-  <div class="row">
+  <div class="container">
     {% for member in queen.members %}
-      <div class="col">
+      <div class="row">
+        <div class="col-md-4 col-sm-3">
         <img src="img/members/{{ member.imagebw }}" alt="band member" class="img-fluid">
         <h3><a href="members/{{ member.slug }}.html">{{ member.name }}</a></h3>
+        </div>
       </div>
     {% endfor %}
   </div>

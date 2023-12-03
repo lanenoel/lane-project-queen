@@ -6,23 +6,25 @@
 
 {% block content %}
 <div class="container">
-<table class="table table-bordered table-striped" >
-  <thead>
-    <tr>
-      <th scope="col">Date</th>
-      <th scope="col">City</th>
-      <th scope="col">Venue</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for tour in queen.tour %}
-    <tr>
-      <td>{{ tour.date }}</td>
-      <td>{{ tour.city }}</td>
-      <td>{{ tour.venue }}</td>
-    </tr>
-    {% endfor %}
-  </tbody>
-</table>
+    <h1>Queen Tours</h1>
+  <h6>Here is a table of the bands tour dates in 2022.</h6>
+  <table class="table table-bordered  table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Date</th>
+        <th scope="col">City</th>
+        <th scope="col">Venue</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for tour in queen.tour %}
+      <tr>
+        <td>{{ tour.date }}</td>
+        <td>{{ tour.city }}</td>
+        <td>{{ tour.venue }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
 </div>
 {% endblock %}
