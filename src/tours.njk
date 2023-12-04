@@ -6,8 +6,8 @@
 
 {% block content %}
 <div class="container">
-    <h1>Queen Tours</h1>
-  <h6>Here is a table of the bands tour dates in 2022.</h6>
+  <h1>Queen Tours</h1>
+  <h6>Here is a table of the band's tour dates in 2022.</h6>
   <table class="table table-bordered  table-striped">
     <thead>
       <tr>
@@ -18,11 +18,11 @@
     </thead>
     <tbody>
       {% for tour in queen.tour %}
-      <tr>
-        <td>{{ tour.date }}</td>
-        <td>{{ tour.city }}</td>
-        <td>{{ tour.venue }}</td>
-      </tr>
+        <tr>
+          <td>{{ tour.date }}</td>
+          <td>{{ tour.city }}</td>
+          <td>{{ tour.venue }}</td>
+        </tr>
       {% endfor %}
     </tbody>
   </table>

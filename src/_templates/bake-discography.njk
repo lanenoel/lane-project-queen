@@ -8,13 +8,13 @@
 
 {% block content %}
   <article class="container">
-    <div class="row">
+    <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4">
       <div class="col-sm-4">
-          <img src="../img/discs{{ image }}" alt="" class="img-fluid mb-4">
+        <img src="../img/discs{{ image }}" alt="" class="img-fluid mb-4">
       </div>
-      <div class="col-sm-8">
-          <h1>{{ title }}</h1>
-          <p>{{ year | safe }}</p>
+      <div class="col-sm-4">
+        <h1>{{ title }}</h1>
+        <p>{{ year | safe }}</p>
       </div>
     </div>
   </article>
