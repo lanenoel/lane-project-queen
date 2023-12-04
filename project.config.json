@@ -1,16 +1,6 @@
 {
   "files": [
     {
-      "fileId": "1RgMhjtkXlbbf9uzSzy_xPRKwxcVZIZqVytgM_JoU4E4",
-      "type": "doc",
-      "name": "library"
-    },
-    {
-      "fileId": "1gDwO-32cgpBDn_0niV0iu6TqQTaRDr4nmSqnT53magY",
-      "type": "sheet",
-      "name": "bookstores"
-    },
-    {
       "fileId": "13QD3x-sBv8jN0StezNBQ0lPg2JHqVGhSmOj6b5Mm8X8",
       "type": "sheet",
       "name": "queen"
@@ -18,13 +8,6 @@
 
   ],
   "to_bake": [
-    {
-      "template": "bake-book",
-      "data": "library",
-      "array": "books",
-      "slug": "slug",
-      "path": "books"
-    },
     {
       "template": "bake-queen",
       "data": "queen",
